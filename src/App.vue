@@ -21,10 +21,17 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <router-link class="nav-link active" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <router-link class="nav-link active" to="/about">
+                About
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link active" to="/contact">
+                Contact
+              </router-link>
             </li>
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown">
@@ -36,15 +43,25 @@
                 data-mdb-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                @MusicStore
               </a>
               <!-- Dropdown menu -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <router-link class="dropdown-item" href="#"
+                    >Action</router-link
+                  >
+                </li>
+                <li>
+                  <router-link class="dropdown-item" href="#"
+                    >Action</router-link
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <router-link class="dropdown-item" href="#"
+                    >Action</router-link
+                  >
                 </li>
               </ul>
             </li>
